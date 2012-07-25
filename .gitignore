@@ -3,8 +3,10 @@
 .project
 
 # Generated directories ignore.
-bin
-gen
+/bin/
+/gen/
+/libs/
+/obj/
 
 # Android built application files
 *.apk
@@ -37,3 +39,4 @@ lib/
 ref
 scripts/template_m.txt
 tags
+/project.properties
