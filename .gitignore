@@ -1,0 +1,39 @@
+# Eclipse ignore.
+.classpath
+.project
+
+# Generated directories ignore.
+bin
+gen
+
+# Android built application files
+*.apk
+*.ap_
+
+#  Android files for the dex VM
+*.dex
+
+#  Android Java class files
+*.class
+
+# Temporary eclipse edition files.
+*.swp
+
+#  Android generated GUI files
+*/R.java
+
+# Ant files
+local.properties
+secure.properties
+
+# Proguard binaries
+proguard/*.jar
+
+# Temporal unapplied patches.
+*.diff
+
+.DS_Store
+lib/
+ref
+scripts/template_m.txt
+tags
