@@ -40,3 +40,5 @@ ref
 scripts/template_m.txt
 tags
 /project.properties
+readme.txt
+/jni/nimcache

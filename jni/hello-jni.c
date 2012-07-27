@@ -16,6 +16,7 @@
  */
 #include <string.h>
 #include <jni.h>
+#include "niminterface.h"
 
 /* This is a trivial JNI example where we use a native method
  * to return a new VM String. See the corresponding Java source
@@ -27,5 +28,7 @@ jstring
 Java_com_example_hellojni_HelloJni_stringFromJNI( JNIEnv* env,
                                                   jobject thiz )
 {
-    return (*env)->NewStringUTF(env, "Hello from JNI !");
+	NimMain();
+	long t = myAdd(3, 5);
+	return (*env)->NewStringUTF(env, "Hello from JNI !");
 }
