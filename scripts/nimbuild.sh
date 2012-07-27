@@ -16,7 +16,7 @@ fi
 if [ -d src ]
 then
 	$PATH_TO_NIMROD c --noMain  --app:lib \
-		--nimcache:jni/nimcache --compileOnly jni/*.nim
+		--nimcache:jni --compileOnly jni/*.nim
 else
 	echo "Uh oh, src directory not found?"
 	exit 1

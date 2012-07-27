@@ -40,5 +40,8 @@ ref
 scripts/template_m.txt
 tags
 /project.properties
-readme.txt
+/readme.txt
 /jni/nimcache
+/jni/backend.c
+/jni/nim__dat.c
+/jni/system.c

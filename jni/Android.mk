@@ -16,15 +16,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := nimrod
-LOCAL_SRC_FILES := nimcache/backend.c nimcache/nim__dat.c nimcache/system.c
-
-include $(BUILD_STATIC_LIBRARY)
-
-include $(CLEAR_VARS)
-
 LOCAL_MODULE    := hello-jni
-LOCAL_SRC_FILES := hello-jni.c
-LOCAL_STATIC_LIBRARIES := nimrod
+LOCAL_SRC_FILES := hello-jni.c backend.c nim__dat.c system.c
 
 include $(BUILD_SHARED_LIBRARY)
