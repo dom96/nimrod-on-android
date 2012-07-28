@@ -29,6 +29,6 @@ Java_com_example_hellojni_HelloJni_stringFromJNI( JNIEnv* env,
                                                   jobject thiz )
 {
 	NimMain();
-	long t = myAdd(3, 5);
-	return (*env)->NewStringUTF(env, "Hello from JNI !");
+	char *result = getSomeString();
+	return (*env)->NewStringUTF(env, result);
 }
